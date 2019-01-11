@@ -1,20 +1,23 @@
-const Discord = require("discord.js");
-const client = new Discord.Client();
-
+const Commando = require("discord.js-commando");
+const bot = new Commando.Client();
 const token = "NTMyMzE0NjMzNDUzNjk5MDcy.DxbdaQ.IbpOQoly7K7LXBGnl3g1OK8GPnI";
 
-//when a message is sent
-client.on("message", msg => {
-  if (msg.content === "!invite") {
-    msg.channel.send("https://discord.gg/v46vM9Q");
-  }
+bot.registry.registerGroup("simple", "Simple");
+bot.registry.registerGroup("music", "Music");
+bot.registry.registerDefaults();
+bot.registry.registerCommandsIn(__dirname + "/commands");
 
-  msg.react("☺");
+//when a message is sent
+bot.on("message", function(message) {
+  if (message.content == "Hello") {
+    message.channel.sendMessage("Hello!");
+  }
 });
 
 //bot logged in
-client.on("ready", () => {
+bot.on("ready", () => {
   console.log(console.log("bot has logged on"));
 });
 
-client.login(token);
+//login
+bot.login(token);
