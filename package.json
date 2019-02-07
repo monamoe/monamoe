@@ -26,6 +26,8 @@
     "discord.js-commando": "^0.10.0",
     "ffmpeg-binaries": "^4.0.0",
     "opusscript": "0.0.6",
+    "request": "^2.88.0",
+    "twitch-api-v5": "^2.0.4",
     "ytdl-core": "^0.29.0"
   }
 }

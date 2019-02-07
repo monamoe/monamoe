@@ -6,7 +6,7 @@ class LeaveChannelCommand extends commando.Command {
       name: "leave",
       group: "music",
       memberName: "leave",
-      description: "Leaves the voice channel"
+      description: "Leaves voice channel"
     });
   }
 

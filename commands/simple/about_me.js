@@ -14,7 +14,7 @@ class AboutMeCommand extends commando.Command {
   async run(message, args) {
     var myInfo = new discord.RichEmbed()
       .setTitle("Monamoe | lordfireriser")
-      .addField("Twitter", "https://twitter.com/lordfireriser")
+      .addField("Twitter", "https://twitter.com/m0namoe")
       .addField("Soundcloud Alt", "https://soundcloud.com/lordfireriser")
       .addField("Soundcloud", "https://soundcloud.com/monamoe")
       .addField("Twitch", "https://twitch.tv/lordfireriser")

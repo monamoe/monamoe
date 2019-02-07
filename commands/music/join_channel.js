@@ -22,7 +22,7 @@ class JoinChannelCommand extends commando.Command {
       name: "join",
       group: "music",
       memberName: "join",
-      description: "Followes the user into a voice channel"
+      description: "Follows the user into a voice channel"
     });
   }
 
