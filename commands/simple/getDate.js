@@ -17,7 +17,6 @@ class getDate extends commando.Command {
     var str = message.argString; //the content of the message
     var res = str.split("videos/");
     var res = res[1].split("?");
-    message.channel.sendMessage(str);
 
     //send request for information on the VOD
     request.get(

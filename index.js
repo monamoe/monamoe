@@ -1,8 +1,6 @@
 const Commando = require("discord.js-commando");
 const bot = new Commando.Client();
 const token = "NTMyMzE0NjMzNDUzNjk5MDcy.DxbdaQ.IbpOQoly7K7LXBGnl3g1OK8GPnI";
-var api = require("twitch-api-v5");
-api.clientID = "Twitch app client-id";
 
 bot.registry.registerGroup("simple", "Simple");
 bot.registry.registerGroup("music", "Music");
@@ -30,7 +28,7 @@ bot.on("message", function(message) {
     message.react("😴 ");
   }
 
-  if (message.content == ":NaM:") {
+  if (message.content == "NaM") {
     message.react("🈹");
     message.react("🈴");
     message.react("🈯");
